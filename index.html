@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachers Report Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="reportCard.css" />
+  </head>
+  <body>
+    <div id="overlay" class="overlay">
+      <div class="form-container">
+        <h1 class="h2">Info</h1>
+        <form onsubmit="submitForm(event)" id="form">
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            required
+            autofocus="on"
+            placeholder="First Name"
+          /><br /><br />
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            required
+            placeholder="Last Name"
+          /><br /><br />
+          <div class="form-button">
+            <button type="submit">Submit</button>
+            <button class="close-form" onclick="closeOverlay()">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="overlay2">
+      <div class="error-container">
+        <h1 class="h2">Not a Teacher :/</h1>
+        <button onclick="closeErrorOverlay()" class="close">Close</button>
+      </div>
+    </div>
+
+    <div class="up">
+      <div class="reportCard">
+        <div class="head">
+          <h1 class="h1">REPORT CARD</h1>
+          <p class="schoolName">Royal Mount Academy</p>
+        </div>
+
+        <div class="mainInfo">
+          <div class="infoName">Teacher's Name: <span class="name"></span></div>
+          <div class="infoSession">Session: <span class="session"></span></div>
+          <div class="infoClass">
+            Class and Section: <span class="class"></span>
+          </div>
+          <div class="infoSubject">Subject: <span class="subject"></span></div>
+        </div>
+        <div class="gradingArea">
+          <div class="grades">
+            <div class="gradesAttributes">
+              <div class="gradesAttributes1">
+                <p style="padding-top: 14.5px">Attributes</p>
+              </div>
+              <div class="gradesAttributes2">
+                <p>Cleanliness</p>
+
+                <p>Punctuality</p>
+                <p>Teaching Skills</p>
+                <p>Communication Skills</p>
+                <p>Creativity</p>
+                <p>Enthusiasm</p>
+              </div>
+            </div>
+            <div class="gradesEmoji">
+              <div class="gradesEmoji1">
+                <p style="padding-top: 14.5px">Grades</p>
+              </div>
+              <div class="gradesEmoji2">
+                <!--😁🙂😑🫤☹️-->
+                <p class="grade1"></p>
+                <p class="grade2"></p>
+                <p class="grade3"></p>
+                <p class="grade4"></p>
+                <p class="grade5"></p>
+                <p class="grade6"></p>
+              </div>
+            </div>
+          </div>
+          <div class="gradingSchemes">
+            <div class="schemeHead">Grading Conversions</div>
+            <div class="schemeBody">
+              <p class="gig1">A = 😁</p>
+              <p class="gig2">B = 😊</p>
+              <p class="gig3">C = 😑</p>
+              <p class="gig4">D = 🫤</p>
+              <p class="gig5">E = ☹️</p>
+            </div>
+          </div>
+        </div>
+        <div class="remark">
+          <div class="remarkHead">Remark</div>
+          <div class="remarkMain"></div>
+        </div>
+        <div class="div-flex">
+          <button class="reload" onclick="openOverlay()">
+            <span class="material-symbols-outlined"> frame_reload </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="reportCard.js"></script>
+  </body>
+</html>

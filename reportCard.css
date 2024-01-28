@@ -338,3 +338,53 @@ button {
   grid-template-columns: 1fr 1fr;
   column-gap: 15px;
 }
+@media only screen and (max-width: 600px) {
+  .reportCard {
+    width: 95%;
+  }
+
+  .h1 {
+    font-size: 28px;
+  }
+
+  .schoolName {
+    font-size: 12px;
+  }
+
+  .infoName,
+  .infoSession,
+  .infoClass,
+  .infoSubject {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .gradesAttributes2,
+  .gradesEmoji2 {
+    font-size: 8px;
+    line-height: 16px;
+    padding-top: 8px;
+  }
+
+  .gradesEmoji1,
+  .gradesAttributes1 {
+    height: auto;
+  }
+
+  .schemeBody {
+    padding-top: 3px;
+  }
+
+  .remarkHead,
+  .remarkMain {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .reload {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

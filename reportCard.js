@@ -218,7 +218,7 @@ console.log(`library:Prachi Rai,
         Ankush Shrivastav,
         Neha Pandey,
         Vikrant Muskan,
-        Anurag Legend, `);
+        Anurag Shrivastav. `);
 // window.onload = function () {
 //   openOverlay();
 // };

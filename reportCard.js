@@ -146,7 +146,7 @@ document.querySelector("#form").addEventListener("submit", function (event) {
     document.querySelector(".remarkMain").textContent =
       "We have a teacher who is proficient in all computer languages – Mr. Sudhanshu.Furthermore, our advanced computer science teacher, a true wizard in the realm of technology, imparts knowledge beyond the basics. With expertise in advanced programming languages and technologies, he equips students with the skills necessary to navigate the intricate landscape of computer science. Undoubtedly, Mr. Sudhanshu is a beacon of knowledge and inspiration in our academic journey.";
   } else if (fullName === "Ankush Shrivastav") {
-    document.querySelector(".name").textContent = "Ankush Shrivastav";
+    document.querySelector(".name").textContent = "Ankush Sharma";
     document.querySelector(".session").textContent = "2023-24";
     document.querySelector(".class").textContent = "No Class";
     document.querySelector(".subject").textContent = "Mathematics";
@@ -215,7 +215,7 @@ console.log(`library:Prachi Rai,
         Seemi Legend,
         Sajla Legend,
         Sudhanshu Legend,
-        Ankush Shrivastav,
+        Ankush Sharma,
         Neha Pandey,
         Vikrant Muskan,
         Anurag Shrivastav. `);
